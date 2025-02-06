@@ -4,10 +4,10 @@ class Person {
 		this.name=name
 		this.age=age
 	}
-	name(){
+	get name(){
 		return name;
 	}
-	age(){
+	get age(){
 		this.age=age;
 	}
 }
@@ -18,7 +18,7 @@ class Student extends Person {
 	}
 
 	 study(){
-		 return `${name} is studying`
+		console.log(`${this.name} is studying`)
 	 }
 }
 
@@ -29,7 +29,7 @@ class Teacher extends Person {
 	}
 
 	teach(){
-		 return `${name} is teaching`
+		 console.log(`${this.name} is teaching`)
 	}
 }
 
